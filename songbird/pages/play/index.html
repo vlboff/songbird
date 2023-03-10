@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SongBird</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Jura:wght@500&family=Poiret+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <img src="../../assets/bird_logo.svg" alt="logo" class="header__logo-img" width="250">
+      </div>
+      <div class="header__score">
+        <div class="header__score-text"></div>
+        <div class="header__score-result">0</div>
+      </div>
+    </header>
+    <main class="main">
+      <ul class="main__questions">
+        <li class="main__questions_block active"></li>
+        <li class="main__questions_block"></li>
+        <li class="main__questions_block"></li>
+        <li class="main__questions_block"></li>
+        <li class="main__questions_block"></li>
+        <li class="main__questions_block"></li>
+      </ul>
+      <div class="main__random">
+        <img src="https://birds-quiz.netlify.app/static/media/bird.06a46938.jpg" alt="bird_secret" class="main__random-img">
+        <div class="main__random_block">
+          <div class="main__random-name">*******</div>
+          <div class="main__random_audio">
+            <div class="main__random_audio_play"></div>
+            <div class="main__random_audio_pause"></div>
+            <div class="main__random_audio_progress">
+              <div class="main__random_audio_progress-bar">
+                <div class="main__random_audio_progress-bar_percent"></div>
+              </div>
+              <div class="main__random_audio_progress_time">
+                <div class="main__random_audio_progress_time-start">00:00</div>
+                <div class="main__random_audio_progress_time-end">00:00</div>
+              </div>
+            </div>
+            <div class="main__random_audio_volume">
+              <div class="main__random_audio_volume-bar">
+                <div class="main__random_audio_volume-bar_percent"></div>
+              </div>
+              <img src="../../assets/volume.png" alt="volume" class="main__random_audio_volume-btn" width="10">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__answers">
+        <ul class="main__birds">
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+          <li class="main__birds_item">
+            <div class="main__birds_item-circle"></div>
+            <div class="main__birds_item-text"></div>
+          </li>
+        </ul>
+        <div class="main__dscr">
+          <div class="main__dscr_default"></div>
+
+          <div class="main__dscr_wrapper">
+            <img src="" alt="bird" class="main__dscr_img" width="200" height="155">
+            <div class="main__dscr_block">
+              <span class="main__dscr_name"></span>
+              <span class="main__dscr_latname"></span>
+              <div class="main__dscr_audio">
+                <div class="main__dscr_audio_play" ></div>
+                <div class="main__dscr_audio_pause"></div>
+                <div class="main__dscr_audio_progress">
+                  <div class="main__dscr_audio_progress-bar">
+                    <div class="main__dscr_audio_progress-bar_percent"></div>
+                  </div>
+                  <div class="main__dscr_audio_progress_time">
+                    <div class="main__dscr_audio_progress_time-start">00:00</div>
+                    <div class="main__dscr_audio_progress_time-end">00:00</div>
+                  </div>
+                </div>
+                <div class="main__dscr_audio_volume">
+                  <div class="main__dscr_audio_volume-bar">
+                    <div class="main__dscr_audio_volume-bar_percent"></div>
+                  </div>
+                  <img src="../../assets/volume.png" alt="volume" class="main__dscr_audio_volume-btn" width="10">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__dscr_text"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <button class="footer-btn" disabled="disabled" ></button>
+    </footer>
+  </div>
+  <div class="end-game">
+    <h1 class="text"></h1>
+    <form action="../main/index.html">
+      <button class="button"></button>
+    </form>
+  </div>
+  <script type="module" src="../../js/script_play.js"></script>
+</body>
+</html>

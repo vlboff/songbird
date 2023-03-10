@@ -1,0 +1,100 @@
+*
+  box-sizing: border-box
+
+.main
+  position: relative
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__media
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    overflow: hidden
+    background: #cccccc url(../../assets/forest-trees.jpeg) no-repeat center
+    background-size: cover
+    &-video
+      position: absolute
+      top: 50%
+      left: 50%
+      min-width: 100%
+      min-height: 100%
+      object-fit: cover
+      transform: translate(-50%, -50%)
+
+  &__content
+    z-index: 10
+    width: 370px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-btn
+      margin-top: 30px
+      width: 370px
+      height: 100px
+      border-radius: 10px
+      border-style: none
+      background: #009444
+      font-family: Poiret One
+      font-size: 48px
+      color: #ffffff
+      cursor: pointer
+      &:hover
+        background: #006b32
+      &:active
+        transform: scale(0.95)
+    &-button
+      margin-top: 30px
+      width: 370px
+      height: 100px
+      border-radius: 10px
+      border-style: none
+      background: #009444
+      font-family: Poiret One
+      font-size: 48px
+      color: #ffffff
+      cursor: pointer
+      &:hover
+        background: #006b32
+      &:active
+        transform: scale(0.95)
+    &_laguages
+      &-btn
+        margin-top: 30px
+        width: 50px
+        height: 50px
+        border-radius: 10px
+        border-style: none
+        background:  rgba(255, 255, 255, .6)
+        font-family: Poiret One
+        font-size: 24px
+        color: #009444
+        cursor: pointer
+        &:hover
+          background: rgba(255, 255, 255, 1)
+        &:active
+          transform: scale(0.95)
+      .active
+        background: rgba(255, 255, 255, 1)
+
+
+
+@media (max-width: 420px)
+  .main
+      &__content
+        width: 250px
+        &-btn
+          margin-top: 30px
+          width: 250px
+          height: 100px
+          font-size: 36px
+        &-button
+          margin-top: 30px
+          width: 250px
+          height: 100px
+          font-size: 36px
