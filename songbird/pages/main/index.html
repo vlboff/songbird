@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SongBird</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SongBird</title>
 
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Jura:wght@500&family=Poiret+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-  <main class="main">
-    <div class="main__media">
-      <video class="main__media-video" src="../../assets/first_screen.webm" autoplay loop></video>
-    </div>
-    <div class="main__content">
-      <img src="../../assets/bird_logo.svg" alt="logo">
-      <form action="../play/index.html">
-        <button class="main__content-btn"></button>
-      </form>
-      <div class="main__content_laguages">
-        <button class="main__content_laguages-btn" id="by">BY</button>
-        <button class="main__content_laguages-btn active" id="ru">RU</button>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Jura:wght@500&family=Poiret+One&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__media">
+        <video
+          class="main__media-video"
+          src="../../assets/first_screen.webm"
+          preload="auto"
+          autoplay
+          muted
+          loop
+        ></video>
       </div>
-      <form action="../gallary/index.html">
-        <button class="main__content-button"></button>
-      </form>
-    </div>
-  </main>
-  <script type="module" src="../../js/script_main.js"></script>
-</body>
+      <div class="main__content">
+        <img src="../../assets/bird_logo.svg" alt="logo" />
+        <form action="../play/index.html">
+          <button class="main__content-btn"></button>
+        </form>
+        <div class="main__content_laguages">
+          <button class="main__content_laguages-btn" id="by">BY</button>
+          <button class="main__content_laguages-btn active" id="ru">RU</button>
+        </div>
+        <form action="../gallary/index.html">
+          <button class="main__content-button"></button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="../../js/script_main.js"></script>
+  </body>
 </html>
